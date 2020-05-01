@@ -17,11 +17,17 @@ a 9 9 9 a a a a 8 a 8 8 a . a .
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, SpriteKind.Player)
+    mySprite.setImage(sprites.food.bigBurger)
+    _3rr0r.say("I WANT... WAIT. IT,S A BURGER:-O. I WANT THIS BURGER!")
+    pause(10000)
     _3rr0r.follow(mySprite)
+    _3rr0r.say("OM NOM NOM.OH NO IT,S TOO BIG. OFF")
     pause(5000)
     mySprite.destroy(effects.coolRadial, 500)
     _3rr0r.destroy(effects.fountain, 500)
     my_enemy.destroy(effects.warmRadial, 500)
+    mySprite.say("OFF :-(")
+    pause(2000)
     game.over(true, effects.slash)
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -43,11 +49,17 @@ a 9 9 9 a a a a 8 a 8 8 a . a .
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, SpriteKind.Player)
+    mySprite.setImage(sprites.food.bigBurger)
+    _3rr0r.say("I WANT... WAIT. IT,S A BURGER:-O. I WANT THIS BURGER!")
+    pause(10000)
     _3rr0r.follow(mySprite)
+    _3rr0r.say("OM NOM NOM.OH NO IT,S TOO BIG. OFF")
     pause(5000)
     mySprite.destroy(effects.coolRadial, 500)
     _3rr0r.destroy(effects.fountain, 500)
     my_enemy.destroy(effects.warmRadial, 500)
+    mySprite.say("OFF :-(")
+    pause(2000)
     game.over(false, effects.melt)
 })
 let _3rr0r: Sprite = null
